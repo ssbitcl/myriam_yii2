@@ -20,12 +20,31 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        //'css/site.css',
+        'template/vendors/feather/feather.css',
+        'template/vendors/mdi/css/materialdesignicons.min.css',
+        'template/vendors/ti-icons/css/themify-icons.css',
+        'template/vendors/typicons/typicons.css',
+        'template/vendors/simple-line-icons/css/simple-line-icons.css',
+        'template/vendors/css/vendor.bundle.base.css',
+        'template/js/select.dataTables.min.css',
+        'template/css/style.css',
+
     ];
+
+
     public $js = [
+        'template/vendors/js/vendor.bundle.base.js',
+        'template/vendors/chart.js/Chart.min.js',
+        'template/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js',
+        'template/vendors/progressbar.js/progressbar.min.js',
+        'template/js/off-canvas.js',
+        'template/js/hoverable-collapse.js',
+        'template/js/template.js',
     ];
+
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap4\BootstrapAsset',
+        //'yii\bootstrap4\BootstrapAsset',
     ];
 }
