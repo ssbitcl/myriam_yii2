@@ -44,7 +44,7 @@ AppAsset::register($this);
                     <img src="<?php echo Url::base();?>/template/images/logo.png" alt="logo" />
                 </a>
                 <a class="navbar-brand brand-logo-mini" href="<?php echo Url::to(['/site/index']);?>">
-                    <img src="<?php echo Url::base();?>/template/images/favicon.png" alt="logo" />
+                    <img src="<?php echo Url::base();?>/template/images/logo-m.png" alt="logo" />
                 </a>
             </div>
         </div>
@@ -89,7 +89,7 @@ AppAsset::register($this);
 
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo Url::to(['/site/index']);?>">
+                    <a class="nav-link" href="<?php echo Url::to(['/site/principal']);?>">
                         <i class="mdi mdi-grid-large menu-icon"></i>
                         <span class="menu-title">Principal</span>
                     </a>
@@ -105,7 +105,7 @@ AppAsset::register($this);
                     <div class="collapse" id="ui-basic">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/contact']);?>">1.- Modelos y alertas</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="conveyor2.html">2.- Prescriptivo</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/about']);?>">2.- Prescriptivo</a></li>
                             <li class="nav-item"> <a class="nav-link" href="conveyor3.html">3.-  Todas las variables</a></li>
                         </ul>
                     </div>
@@ -118,8 +118,15 @@ AppAsset::register($this);
 
         <?= Alert::widget() ?>
         <?= $content ?>
-        <!-- main-panel ends -->
+
     </div>
+
+    <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <!--<span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>-->
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+        </div>
+    </footer>
     <!-- page-body-wrapper ends -->
 </div>
 

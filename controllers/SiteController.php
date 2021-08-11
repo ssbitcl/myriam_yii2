@@ -61,8 +61,21 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        //return $this->render('index');
+
+        return $this->redirect(['site/principal']);
     }
+
+    /**
+     * Displays principal.
+     *
+     * @return string
+     */
+    public function actionPrincipal()
+    {
+        return $this->render('principal');
+    }
+
 
     /**
      * Login action.
