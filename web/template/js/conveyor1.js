@@ -287,3 +287,21 @@ if ($("#areaChart").length) {
         options: areaOptions
     });
 }
+
+if ($("#lineChart").length) {
+    var lineChartCanvas = $("#lineChart").get(0).getContext("2d");
+    var lineChart = new Chart(lineChartCanvas, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}
+
+if ($("#lineChart2").length) {
+    var lineChartCanvas = $("#lineChart2").get(0).getContext("2d");
+    var lineChart = new Chart(lineChartCanvas, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}

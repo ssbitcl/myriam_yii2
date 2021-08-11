@@ -152,4 +152,24 @@ class SiteController extends Controller
     {
         return $this->render('conveyor1');
     }
+
+    /**
+     * Displays actionConveyor2.
+     *
+     * @return string
+     */
+    public function actionConveyor2()
+    {
+        return $this->render('conveyor2');
+    }
+
+    /**
+     * Displays actionConveyor3.
+     *
+     * @return string
+     */
+    public function actionConveyor3()
+    {
+        return $this->render('conveyor3');
+    }
 }

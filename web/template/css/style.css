@@ -12199,6 +12199,11 @@ fieldset:disabled .wizard > .actions a,
   font-size: 0.812rem;
   border-radius: 0.1875rem;
 }
+.btn-xs2, .btn-group-xs2 > .btn, .fc .btn-group-xs2 > button, .ajax-upload-dragdrop .btn-group-xs2 > .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-group-xs2 > .swal2-styled, .wizard > .actions .btn-group-xs2 > a, .fc button {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.812rem;
+  border-radius: 0.1875rem;
+}
 
 .fade {
   transition: opacity 0.15s linear;
@@ -22558,10 +22563,10 @@ code {
 .card .card-title.card-title2 {
     text-align: center;
     background-color: #1B1960;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px 10px 0px 0px;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin-bottom: 0px;
 }
 
@@ -29394,7 +29399,7 @@ div.tagsinput span.tag a {
   flex-direction: row;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 97px;
+  padding-top: 67px;
 }
 
 .page-body-wrapper.full-page-wrapper {
@@ -29853,7 +29858,7 @@ div.tagsinput span.tag a {
   -moz-transition: width 0.25s ease, background 0.25s ease;
   -ms-transition: width 0.25s ease, background 0.25s ease;
   width: 220px;
-  height: 97px;
+  height: 67px;
   padding: 20px 35px;
 }
 
@@ -29962,7 +29967,7 @@ div.tagsinput span.tag a {
   padding-top: 30px;
   padding-bottom: 25px;
   width: calc(100% - 220px);
-  height: 97px;
+  height: 67px;
 }
 
 @media (max-width: 991px) {
@@ -30272,7 +30277,7 @@ div.tagsinput span.tag a {
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
-  line-height: 38px;
+  line-height: 25px;
   color: #8D8D8D;
   margin-bottom: 10px;
 }

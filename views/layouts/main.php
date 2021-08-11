@@ -105,8 +105,8 @@ AppAsset::register($this);
                     <div class="collapse" id="ui-basic">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1']);?>">1.- Modelos y alertas</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/about']);?>">2.- Prescriptivo</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="conveyor3.html">3.-  Todas las variables</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor2']);?>">2.- Prescriptivo</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor3']);?>">3.- Todas las variables</a></li>
                         </ul>
                     </div>
                 </li>
