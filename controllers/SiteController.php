@@ -66,15 +66,7 @@ class SiteController extends Controller
         return $this->redirect(['site/principal']);
     }
 
-    /**
-     * Displays principal.
-     *
-     * @return string
-     */
-    public function actionPrincipal()
-    {
-        return $this->render('principal');
-    }
+
 
 
     /**
@@ -137,5 +129,27 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+
+
+    /**
+     * Displays principal.
+     *
+     * @return string
+     */
+    public function actionPrincipal()
+    {
+        return $this->render('principal');
+    }
+
+    /**
+     * Displays actionConveyor1.
+     *
+     * @return string
+     */
+    public function actionConveyor1()
+    {
+        return $this->render('conveyor1');
     }
 }

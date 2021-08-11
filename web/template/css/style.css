@@ -13359,6 +13359,10 @@ fieldset:disabled .wizard > .actions a,
   flex: 1 1 auto;
   padding: 1rem 1rem;
 }
+.card-body2 {
+  flex: 1 1 auto;
+  padding: 10px;
+}
 
 .card-title {
   margin-bottom: 0.5rem;
@@ -22551,6 +22555,16 @@ code {
   font-weight: 600;
 }
 
+.card .card-title.card-title2 {
+    text-align: center;
+    background-color: #1B1960;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    font-size: 0.9em;
+    margin-bottom: 0px;
+}
+
 .card .card-title.card-title-dash {
   font-style: normal;
   font-weight: 800;
@@ -25452,7 +25466,7 @@ dl li {
 }
 
 .table.select-table th, .jsgrid .select-table.jsgrid-table th {
-  color: #A3A3A3;
+  color: #1B1960;
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
@@ -29413,6 +29427,13 @@ div.tagsinput span.tag a {
   -webkit-flex-grow: 1;
   flex-grow: 1;
 }
+.content-wrapper2 {
+  background: #F4F5F7;
+  padding: 20px;
+  width: 100%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
 
 @media (max-width: 767px) {
   .content-wrapper {
@@ -31923,3 +31944,4 @@ div.tagsinput span.tag a {
 }
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
+

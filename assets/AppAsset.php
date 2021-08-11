@@ -28,7 +28,7 @@ class AppAsset extends AssetBundle
         'template/vendors/simple-line-icons/css/simple-line-icons.css',
         'template/vendors/css/vendor.bundle.base.css',
         'template/js/select.dataTables.min.css',
-        'template/css/style.css?v=2',
+        'template/css/style.css?v=3',
 
     ];
 
@@ -41,6 +41,8 @@ class AppAsset extends AssetBundle
         'template/js/off-canvas.js',
         'template/js/hoverable-collapse.js',
         'template/js/template.js?v=2',
+
+        'template/js/conveyor1.js',
     ];
 
     public $depends = [

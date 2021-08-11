@@ -34,7 +34,7 @@
             element.addClass('active');
           }
           if (element.parents('.nav-item').find('.nav-link').length) {
-            console.log(element.parents('.nav-item').find('.nav-link'))
+            //console.log(element.parents('.nav-item').find('.nav-link'))
             element.parents('.nav-item').find('.nav-link').first().addClass('active');
           }
         }

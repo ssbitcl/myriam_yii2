@@ -5,16 +5,13 @@ use yii\helpers\Url;
 $this->title='Principal';
 ?>
 <div class="main-panel">
-    <div class="content-wrapper">
+    <div class="content-wrapper2">
         <div class="row">
             <div class="col-12 grid-margin stretch-card">
                 <div class="card ">
-                    <div class="card-body">
-                        <div class="d-sm-flex justify-content-between align-items-start">
-                            <div>
-                                <h4 class="card-title card-title-dash">Diagrama en Proceso</h4>
-                            </div>
-                        </div>
+                    <div class="card-title card-title2" >Diagrama en Proceso</div>
+                    <div class="card-body2">
+
                         <div class="text-center">
                             <img src="<?php echo Url::base();?>/template/images/d1.jpeg">
                         </div>
