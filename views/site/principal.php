@@ -13,7 +13,7 @@ $this->title='Principal';
                     <div class="card-body2">
 
                         <div class="text-center">
-                            <img src="<?php echo Url::base();?>/template/images/d1.jpeg">
+                            <img src="<?php echo Url::base();?>/template/images/d1.jpeg" style="width: 100%;">
                         </div>
                         <div class="table-responsive  mt-1">
                             <table class="table select-table">

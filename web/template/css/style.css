@@ -29709,7 +29709,7 @@ div.tagsinput span.tag a {
 .sidebar .nav.sub-menu .nav-item .nav-link.active {
   color: #1B1960;
   background: #F9B200;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 20px 20px 0px;
   font-weight: bold;
 }
 
