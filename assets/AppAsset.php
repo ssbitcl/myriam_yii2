@@ -41,8 +41,17 @@ class AppAsset extends AssetBundle
         'template/js/off-canvas.js',
         'template/js/hoverable-collapse.js',
         'template/js/template.js?v=2',
+        'template/vendors/highcharts/code/highcharts.js',
+        'template/vendors/highcharts/code/modules/sankey.js',
+        'template/vendors/highcharts/code/modules/organization.js',
+        'template/vendors/highcharts/code/modules/exporting.js',
+        'template/vendors/highcharts/code/modules/export-data.js',
+        'template/vendors/highcharts/code/modules/accessibility.js',
 
-        'template/js/conveyor1.js?v=2',
+
+
+
+        'template/js/conveyor1.js?v=4',
     ];
 
     public $depends = [

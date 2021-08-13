@@ -305,3 +305,153 @@ if ($("#lineChart2").length) {
         options: options
     });
 }
+
+if ($("#container_arbol").length) {
+    Highcharts.chart('container_arbol', {
+        chart: {
+            height: 400,
+            inverted: true
+        },
+
+        title: {
+            text: ''
+        },
+
+        accessibility: {
+            point: {
+                descriptionFormatter: function (point) {
+                    var nodeName = point.toNode.name,
+                        nodeId = point.toNode.id,
+                        nodeDesc = nodeName === nodeId ? nodeName : nodeName + ', ' + nodeId,
+                        parentDesc = point.fromNode.id;
+                    return point.index + '. ' + nodeDesc + ', reports to ' + parentDesc + '.';
+                }
+            }
+        },
+
+        series: [{
+            type: 'organization',
+            name: ' ',
+            keys: ['from', 'to'],
+            data: [
+                ['Conveyor', 'A'],
+                ['Conveyor', 'B'],
+                ['Conveyor', 'C'],
+                ['A', 'A1'],
+                ['A', 'A2'],
+                ['A', 'A3'],
+                ['B', 'B1'],
+                ['B', 'B2'],
+                ['B', 'B3'],
+                ['B', 'B4'],
+
+
+            ],
+            levels: [{
+                level: 0,
+                color: '#1B1960',
+                height: 25,
+
+            }, {
+                level: 1,
+                color: '#1B1960',
+                height: 20,
+            }, {
+                level: 2,
+                color: '#1B1960'
+            }, {
+                level: 3,
+                color: '#1B1960'
+            }],
+            nodes: [{
+                id: 'Conveyor'
+
+            }, {
+                id: 'A',
+                title: 'Daño en cubierta',
+                name: ' ',
+                column: 1,
+                dataLabels: {
+                    style: {
+                        fontSize: '4em'
+                    }
+                }
+            },  {
+                id: 'B',
+                title: 'Desgaste irregular',
+                name: ' ',
+                column: 1
+            },  {
+                id: 'C',
+                title: 'Otro',
+                name: ' ',
+                column: 1
+
+            },  {
+                id: 'A1',
+                title: 'Caida material',
+                name: ' ',
+                column: 2
+
+            },  {
+                id: 'A2',
+                title: 'Exceso de tension',
+                name: ' ',
+                column: 3
+
+            },  {
+                id: 'A3',
+                title: 'Otro',
+                name: ' ',
+                column: 4
+
+            },  {
+                id: 'B1',
+                title: 'Polines dañados',
+                name: ' ',
+                column: 2
+
+            },  {
+                id: 'B2',
+                title: 'Material acumulado',
+                name: ' ',
+                column: 3
+
+            },  {
+                id: 'B3',
+                title: 'Raspador malo',
+                name: ' ',
+                column: 4
+
+            },  {
+                id: 'B4',
+                title: 'Otro',
+                name: ' ',
+                column: 5
+
+            }
+            ],
+            colorByPoint: false,
+            color: '#007ad0',
+            dataLabels: {
+                color: 'white',
+
+            },
+            borderColor: 'white',
+            nodeWidth: 50,
+
+        }],
+        tooltip: {
+            outside: true
+        },
+        exporting: {
+            allowHTML: true,
+            sourceWidth: 800,
+            sourceHeight: 600
+        }
+
+    });
+}
+
+
+
