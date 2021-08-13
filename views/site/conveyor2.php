@@ -12,7 +12,7 @@ $this->title='Prescriptivo';
                 <div class="row">
                     <div class="col-4 grid-margin stretch-card">
                         <div class="card ">
-                            <div class="card-title card-title2">CT-03 1524 ST 2500 16+8 DIN X,L: 7.050[m]</div>
+                            <div class="card-title card-title2"><?php echo $tag;?></div>
                             <div class="card-body2">
 
                                 <div class="text-center">
@@ -32,18 +32,18 @@ $this->title='Prescriptivo';
                                 <div class="row" style="--bs-gutter-x: 0px; font-size: 0.7em;">
                                     <div class="col-sm-7">
                                         <div style="background-color: red; width: 30px; height: 30px"></div>
-                                        Desgaste acelerado de cubierta de carga en ...
+                                        <?php echo $alarma;?>
                                     </div>
                                     <div class="col-sm-2">
-                                        SD W36 2021
+                                        <?php echo $fecha;?>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                            <p class="text-success">79%</p>
-                                            <p>85/162</p>
+                                            <p class="text-success"><?php echo $p;?>%</p>
+                                            <p><?php echo $vi."/".$vf;?></p>
                                         </div>
                                         <div class="progress progress-md">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $p;?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </div>

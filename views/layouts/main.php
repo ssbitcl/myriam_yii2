@@ -107,6 +107,7 @@ AppAsset::register($this);
                             <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1']);?>">1.- Modelos y alertas</a></li>
                             <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor2']);?>">2.- Prescriptivo</a></li>
                             <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor3']);?>">3.- Todas las variables</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor4']);?>">4.- Recomendacion</a></li>
                         </ul>
                     </div>
                 </li>

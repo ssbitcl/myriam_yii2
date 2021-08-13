@@ -32,88 +32,176 @@ $this->title='Principal';
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td> CH001 </td>
+                                    <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Fisura Corona-piñon',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'79',
+                                        ]);?>">CH001</a> </td>
                                     <td> Motor </td>
                                     <td> Fisura Corona-piñon </td>
                                     <td > <div style="background-color: red; width: 30px; height: 30px"></div> </td>
                                     <td> W32 (Sep 2021) </td>
                                     <td> SD W36 2021 </td>
                                     <td>
-                                        <div>
-                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                                <p class="text-success">79%</p>
-                                                <p>85/162</p>
+                                        <a class="nav-link" href="<?php echo Url::to(['/site/conveyor2',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Fisura Corona-piñon',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'79',
+                                        ]);?>">
+
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                    <p class="text-success">79%</p>
+                                                    <p>85/162</p>
+                                                </div>
+                                                <div class="progress progress-md">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 79%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
                                             </div>
-                                            <div class="progress progress-md">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
+                                        </a>
+
                                     </td>
                                     <td>T eje. Vibraciones</td>
-                                    <td><div class="badge badge-opacity-warning">Inpeccionar</div></td>
+                                    <td>
+                                        <a class="nav-link" href="<?php echo Url::to(['/site/conveyor4',
+                                            'tag'=>'CH001'
+
+                                        ]);?>"><div class="badge badge-opacity-warning">Inpeccionar</div></a>
+                                        </td>
                                 </tr>
                                 <tr>
-                                    <td> CT001 </td>
+                                    <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Desgaste',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'92',
+                                        ]);?>">CH001</a> </td>
                                     <td> Cinta </td>
                                     <td> Desgaste </td>
                                     <td > <div style="background-color: yellow; width: 30px; height: 30px"></div> </td>
                                     <td> W32 (Sep 2021) </td>
                                     <td> SD W36 2021 </td>
                                     <td>
-                                        <div>
-                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                                <p class="text-success">92%</p>
-                                                <p>85/162</p>
+                                        <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Desgaste',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'92',
+                                        ]);?>">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                    <p class="text-success">92%</p>
+                                                    <p>85/162</p>
+                                                </div>
+                                                <div class="progress progress-md">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
                                             </div>
-                                            <div class="progress progress-md">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
+                                        </a>
+
                                     </td>
                                     <td>T eje. Vibraciones</td>
-                                    <td><div class="badge badge-opacity-danger">Cambio</div></td>
+                                    <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor4',
+                                            'tag'=>'CH001'
+
+                                        ]);?>"><div class="badge badge-opacity-danger">Cambio</div></a>
+                                        </td>
                                 </tr>
                                 <tr>
-                                    <td> CH001 </td>
+                                    <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Fisura Corona-piñon',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'79',
+                                        ]);?>">CH001</a> </td>
                                     <td> Motor </td>
                                     <td> Fisura Corona-piñon </td>
                                     <td > <div style="background-color: orange; width: 30px; height: 30px"></div> </td>
                                     <td> W32 (Sep 2021) </td>
                                     <td> SD W36 2021 </td>
                                     <td>
-                                        <div>
-                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                                <p class="text-success">79%</p>
-                                                <p>85/162</p>
+                                        <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Fisura Corona-piñon',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'79',
+                                        ]);?>">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                    <p class="text-success">79%</p>
+                                                    <p>85/162</p>
+                                                </div>
+                                                <div class="progress progress-md">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 79%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
                                             </div>
-                                            <div class="progress progress-md">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
+                                        </a>
+
                                     </td>
                                     <td>T eje. Vibraciones</td>
-                                    <td><div class="badge badge-opacity-warning">Inpeccionar</div></td>
+                                    <td>
+                                        <a class="nav-link" href="<?php echo Url::to(['/site/conveyor4',
+                                            'tag'=>'CH001'
+
+                                        ]);?>">   <div class="badge badge-opacity-warning">Inpeccionar</div></a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td> CH001 </td>
+                                    <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Fisura Corona-piñon',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'79',
+                                        ]);?>">CH001</a>  </td>
                                     <td> Motor </td>
                                     <td> Fisura Corona-piñon </td>
                                     <td > <div style="background-color: red; width: 30px; height: 30px"></div> </td>
                                     <td> W32 (Sep 2021) </td>
                                     <td> SD W36 2021 </td>
                                     <td>
-                                        <div>
-                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                                <p class="text-success">79%</p>
-                                                <p>85/162</p>
+                                        <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
+                                            'tag'=>'CH001',
+                                            'alarma'=>'Fisura Corona-piñon',
+                                            'fecha'=>'W32 (Sep 2021)',
+                                            'vi'=>'85',
+                                            'vf'=>'162',
+                                            'p'=>'79',
+                                        ]);?>">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                    <p class="text-success">79%</p>
+                                                    <p>85/162</p>
+                                                </div>
+                                                <div class="progress progress-md">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 79%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
                                             </div>
-                                            <div class="progress progress-md">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
+                                        </a>
+
                                     </td>
                                     <td>T eje. Vibraciones</td>
-                                    <td><div class="badge badge-opacity-warning">Inpeccionar</div></td>
+                                    <td>
+                                        <a class="nav-link" href="<?php echo Url::to(['/site/conveyor4',
+                                            'tag'=>'CH001'
+
+                                        ]);?>">   <div class="badge badge-opacity-warning">Inpeccionar</div></a>
+                                        </td>
                                 </tr>
 
 

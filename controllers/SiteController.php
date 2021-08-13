@@ -148,9 +148,23 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionConveyor1()
+    public function actionConveyor1(
+        $tag='Sin tag',
+        $alarma='Sin Alarma',
+        $fecha='Sin fecha',
+        $vi='0',
+        $vf='0',
+        $p='0'
+    )
     {
-        return $this->render('conveyor1');
+        return $this->render('conveyor1',[
+            'tag'=>$tag,
+            'alarma'=>$alarma,
+            'fecha'=>$fecha,
+            'vi'=>$vi,
+            'vf'=>$vf,
+            'p'=>$p,
+        ]);
     }
 
     /**
@@ -158,9 +172,23 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionConveyor2()
+    public function actionConveyor2(
+        $tag='Sin tag',
+        $alarma='Sin Alarma',
+        $fecha='Sin fecha',
+        $vi='0',
+        $vf='0',
+        $p='0'
+    )
     {
-        return $this->render('conveyor2');
+        return $this->render('conveyor2',[
+            'tag'=>$tag,
+            'alarma'=>$alarma,
+            'fecha'=>$fecha,
+            'vi'=>$vi,
+            'vf'=>$vf,
+            'p'=>$p,
+        ]);
     }
 
     /**
@@ -171,5 +199,19 @@ class SiteController extends Controller
     public function actionConveyor3()
     {
         return $this->render('conveyor3');
+    }
+    /**
+     * Displays actionConveyor4.
+     *
+     * @return string
+     */
+    public function actionConveyor4(
+        $tag='Sin tag'
+    )
+    {
+        return $this->render('conveyor4',[
+            'tag'=>$tag,
+
+        ]);
     }
 }
