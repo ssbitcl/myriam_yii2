@@ -86,80 +86,30 @@ $this->title='Todas la Variables';
             </div>
             <div class="col-sm-4  grid-margin stretch-card">
                 <div class="card ">
-                    <div class="card-title card-title2">Todas las Alertas</div>
+                    <div class="card-title card-title2">Plan de mitigacion</div>
                     <div class="card-body2">
+                        <div class="row" style="--bs-gutter-x: 0px; font-size: 12px; text-align: center;">
+                            <div class="col-sm-3" style="background: green;">Sin Riesgo</div>
+                            <div class="col-sm-3" style="background: yellow;">Programable</div>
+                            <div class="col-sm-3" style="background: saddlebrown;">Urgente</div>
+                            <div class="col-sm-3" style="background: red;">Inmediato</div>
+                        </div>
 
+                        <div class="row" style="--bs-gutter-x: 0px; font-size: 12px; text-align: center;">
+                            <div class="col-sm-3" >Inspeccion tenica o confiabilidad para encontrar causa raiz</div>
+                            <div class="col-sm-3" >Asear cinta, ajustar raspadores, alinear cinta</div>
+                            <div class="col-sm-3" >Intervenir con equipo denetendo, ralisar reparacion en caliente</div>
+                            <div class="col-sm-3" >Cambio de cinta</div>
 
-                        <div class="table-responsiv  mt-1">
-                            <table class="table select-table">
-
-                                <tbody>
-                                <tr class="table-danger">
-                                    <td> <i class="mdi mdi-information text-danger typcn-2x"></i> </td>
-
-                                    <td> Falla oculta <div class="badge badge-opacity-dark">Vibraciones</div></td>
-                                    <td> <i class="mdi mdi-eye text-primary typcn-2x"></i></td>
-                                    <td>
-                                        <div class="dropdown">
-                                            <button class="btn btn-primary btn-xs2 dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="ti-settings"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton6" style="">
-                                                <h6 class="dropdown-header">Settings</h6>
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div></td>
-                                </tr>
-                                <tr class="table-warning">
-                                    <td> <i class="mdi mdi-information text-warning typcn-2x"></i> </td>
-
-                                    <td> Falla oculta <div class="badge badge-opacity-dark">Vibraciones</div></td>
-                                    <td> <i class="mdi mdi-eye text-primary typcn-2x"></i></td>
-                                    <td>
-                                        <div class="dropdown">
-                                            <button class="btn btn-primary btn-xs2 dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="ti-settings"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton6" style="">
-                                                <h6 class="dropdown-header">Settings</h6>
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div></td>
-                                </tr>
-
-                                <tr class="table-success">
-                                    <td> <i class="mdi mdi-check text-success typcn-2x"></i> </td>
-
-                                    <td> Falla oculta <div class="badge badge-opacity-dark">Vibraciones</div></td>
-                                    <td> <i class="mdi mdi-eye text-primary typcn-2x"></i></td>
-                                    <td>
-                                        <div class="dropdown">
-                                            <button class="btn btn-primary btn-xs2 dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="ti-settings"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton6" style="">
-                                                <h6 class="dropdown-header">Settings</h6>
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div></td>
-                                </tr>
-
-
-
-                                </tbody>
-                            </table>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleInputUsername1">Retroalimentacion</label>
+                            <textarea rows="5" style="height: unset;"  class="form-control" id="exampleInputUsername1" placeholder=""></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputUsername2">Raelizar una recomentadion a MyRIAM</label>
+                            <textarea rows="5" style="height: unset;"  class="form-control" id="exampleInputUsername1" placeholder=""></textarea>
                         </div>
                     </div>
                 </div>
