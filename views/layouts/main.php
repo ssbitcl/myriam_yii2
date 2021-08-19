@@ -51,7 +51,7 @@ AppAsset::register($this);
         <div class="navbar-menu-wrapper d-flex align-items-top">
             <ul class="navbar-nav">
                 <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-                    <h1 class="welcome-text"><span class="text-black fw-bold"><?= Html::encode($this->title) ?></span></h1>
+                    <h1 class="welcome-text"><span class="fw-bold"><?= Html::encode($this->title) ?></span></h1>
                     <!--<h3 class="welcome-sub-text">Your performance summary this week </h3>-->
                 </li>
             </ul>
@@ -64,11 +64,11 @@ AppAsset::register($this);
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                         <div class="dropdown-header text-center">
                             <img class="img-md rounded-circle" src="<?php echo Url::base();?>/template/images/faces/face8.jpg" alt="Profile image">
-                            <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                            <p class="mb-1 mt-3 font-weight-semibold text-secondary">Allen Moreno</p>
                             <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
                         </div>
 
-                        <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Salir</a>
+                        <a class="dropdown-item text-light"><i class="dropdown-item-icon mdi mdi-power text-secondary me-2"></i>Salir</a>
                     </div>
                 </li>
             </ul>
