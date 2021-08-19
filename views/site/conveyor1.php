@@ -8,6 +8,167 @@ $this->title='Modelos y Alertas';
 <div class="main-panel">
     <div class="content-wrapper2">
         <div class="row">
+            <div class="col-3 ">
+                <div class="row">
+                    <div class="col-12 grid-margin stretch-card">
+                        <div class="card ">
+                            <div class="card-title card-title2"><?php echo $tag;?></div>
+                            <div class="card-body2">
+
+                                <div class="text-center">
+                                    <img src="<?php echo Url::base();?>/template/images/d2_1.jpeg" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-title card-title2">Correlaciones</div>
+                            <div class="card-body2">
+                                <canvas id="scatterChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 ">
+                <div class="row">
+                    <div class="col-12 grid-margin stretch-card">
+                        <div class="card ">
+                            <div class="card-title card-title2 row" style="--bs-gutter-x: 0px;">
+                                <div class="col-sm-7">Alarma</div>
+                                <div class="col-sm-2">Fecha</div>
+                                <div class="col-sm-3">Presc</div>
+                            </div>
+                            <div class="card-body2">
+                                <div class="row" style="--bs-gutter-x: 0px; font-size: 0.7em;">
+                                    <div class="col-sm-7">
+                                        <div style="background-color: red; width: 30px; height: 30px"></div>
+                                        <?php echo $alarma;?>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <?php echo $fecha;?>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                            <p class="text-success"><?php echo $p;?>%</p>
+                                            <p><?php echo $vi."/".$vf;?></p>
+                                        </div>
+                                        <div class="progress progress-md">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $p;?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4 ">
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<?php  /*?>
+<div class="main-panel">
+    <div class="content-wrapper2">
+        <div class="row">
+            <div class="col-4 ">
+                <div class="row">
+                    <div class="col-5 grid-margin stretch-card">
+                        <div class="card ">
+                            <div class="card-title card-title2"><?php echo $tag;?></div>
+                            <div class="card-body2">
+
+                                <div class="text-center">
+                                    <img src="<?php echo Url::base();?>/template/images/d2_1.jpeg" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 grid-margin stretch-card">
+                        <div class="card ">
+                            <div class="card-title card-title2 row" style="--bs-gutter-x: 0px;">
+                                <div class="col-sm-7">Alarma</div>
+                                <div class="col-sm-2">Fecha</div>
+                                <div class="col-sm-3">Presc</div>
+                            </div>
+                            <div class="card-body2">
+                                <div class="row" style="--bs-gutter-x: 0px; font-size: 0.7em;">
+                                    <div class="col-sm-7">
+                                        <div style="background-color: red; width: 30px; height: 30px"></div>
+                                        <?php echo $alarma;?>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <?php echo $fecha;?>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                            <p class="text-success"><?php echo $p;?>%</p>
+                                            <p><?php echo $vi."/".$vf;?></p>
+                                        </div>
+                                        <div class="progress progress-md">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $p;?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="home-tab d-sm-flex justify-content-between align-items-start mt-2">
+                                    <div class="">
+                                        <h4 class="card-title card-title-dash">Variables Monitoreadas</h4>
+
+                                    </div>
+                                    <div id="performance-line-legend"></div>
+                                </div>
+                                <div class="chartjs-wrapper mt-2">
+                                    <canvas id="performaneLine"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-title card-title2">Correlaciones</div>
+                            <div class="card-body2">
+                                <canvas id="scatterChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-title card-title2">Analisis Descriptivo</div>
+                            <div class="card-body2">
+
+                                <canvas id="barChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-title card-title2">Modelo Predictivo</div>
+                            <div class="card-body2">
+
+                                <canvas id="areaChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="col-8 ">
                 <div class="row">
                     <div class="col-5 grid-margin stretch-card">
@@ -175,6 +336,4 @@ $this->title='Modelos y Alertas';
         </div>
     </div>
 </div>
-
-
 
