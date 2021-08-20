@@ -9,9 +9,9 @@ $this->title='Modelos y Alertas';
 <div class="main-panel">
     <div class="content-wrapper2">
         <div class="row ">
-            <div class="col-3 ">
-                <div class="row ">
-                    <div class="col-12 grid-margin ">
+            <div class="col-8 ">
+                <div class="row">
+                    <div class="col-sm-5 grid-margin stretch-card ">
                         <div class="card ">
                             <div class="card-title card-title2">Dashboar Equipo
                                 <div class="badge badge-success" style="float: right;padding: 0.3em;font-size: 10px;">Activo</div></div>
@@ -50,74 +50,63 @@ $this->title='Modelos y Alertas';
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row ">
-                    <div class="col-12 grid-margin ">
-                        <div class="card">
-                            <div class="card-title card-title2">Correlaciones</div>
-                            <div class="card-body2">
-                                <canvas id="scatterChart"></canvas>
+                    <div class="col-sm-7">
+                        <div class="row">
+                            <div class="col-12 grid-margin stretch-card no-padding ">
+                                <div class="card ">
+                                    <div class="card-title card-title2">Alarma de Falla</div>
+
+                                    <div class="card-body2">
+                                        <table class="table select-table table3">
+                                            <thead>
+                                            <tr>
+
+                                                <th>S</th>
+                                                <th>Componente</th>
+                                                <th>Descripción</th>
+                                                <th>Fecha</th>
+                                                <th>Presicion</th>
+
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="">
+                                                <td>   <div style="background-color: red; width: 10px; height: 10px; border-radius: 5px;"></div> </td>
+                                                <td> <?php echo $comp;?></td>
+                                                <td> <?php echo $alarma;?></td>
+                                                <td>  <?php echo $fecha;?></td>
+                                                <td>  <?php echo $p;?>%</td>
+                                            </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+
+
+
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-5 ">
-                <div class="row">
-                    <div class="col-12 grid-margin stretch-card no-padding ">
-                        <div class="card ">
-                            <div class="card-title card-title2">Alarma de Falla</div>
-
-                            <div class="card-body2">
-                                <table class="table select-table table3">
-                                    <thead>
-                                    <tr>
-
-                                        <th>S</th>
-                                        <th>Componente</th>
-                                        <th>Descripción</th>
-                                        <th>Fecha</th>
-                                        <th>Presicion</th>
-
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="">
-                                        <td>   <div style="background-color: red; width: 10px; height: 10px; border-radius: 5px;"></div> </td>
-                                        <td> <?php echo $comp;?></td>
-                                        <td> <?php echo $alarma;?></td>
-                                        <td>  <?php echo $fecha;?></td>
-                                        <td>  <?php echo $p;?>%</td>
-                                    </tr>
-
-
-
-                                    </tbody>
-                                </table>
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 grid-margin stretch-card no-padding ">
-                        <div class="card ">
-                            <div class="card-title card-title2">Variables Monitoreadas</div>
-                            <div class="card-body2">
-                                <div id="performance-line-legend"></div>
-                                <div class="chartjs-wrapper mt-2">
-                                    <canvas id="performaneLine"></canvas>
+                        <div class="row">
+                            <div class="col-12 grid-margin stretch-card no-padding ">
+                                <div class="card ">
+                                    <div class="card-title card-title2">Variables Monitoreadas</div>
+                                    <div class="card-body2">
+                                        <div id="performance-line-legend" style="display: none;"></div>
+                                        <div class="chartjs-wrapper mt-2">
+                                            <canvas id="performaneLine"></canvas>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 grid-margin stretch-card no-padding pe-1">
+                    <div class="col-5 grid-margin stretch-card  ">
                         <div class="card">
                             <div class="card-title card-title2">Analisis Descriptivo</div>
                             <div class="card-body2">
@@ -126,8 +115,7 @@ $this->title='Modelos y Alertas';
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-6 grid-margin stretch-card no-padding ps-1">
+                    <div class="col-7 grid-margin stretch-card no-padding ps-1">
                         <div class="card">
                             <div class="card-title card-title2">Modelo Predictivo</div>
                             <div class="card-body2">
@@ -137,6 +125,7 @@ $this->title='Modelos y Alertas';
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="col-4 grid-margin stretch-card">
 
@@ -229,7 +218,13 @@ $this->title='Modelos y Alertas';
             </div>
 
         </div>
+
+
+
+
     </div>
+
+
 </div>
 
 

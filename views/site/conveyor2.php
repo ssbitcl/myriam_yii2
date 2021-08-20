@@ -12,52 +12,107 @@ $this->title='Prescriptivo';
                 <div class="row">
                     <div class="col-4 grid-margin stretch-card">
                         <div class="card ">
-                            <div class="card-title card-title2"><?php echo $tag;?></div>
+                            <div class="card-title card-title2">Dashboar Equipo
+                                <div class="badge badge-success" style="float: right;padding: 0.3em;font-size: 10px;">Activo</div></div>
                             <div class="card-body2">
 
                                 <div class="text-center">
-                                    <img src="<?php echo Url::base();?>/template/images/d2_1.jpeg" style="width: 100%;">
+                                    <img src="<?php echo Url::base();?>/template/images/correa.svg" style="width: 100%;">
                                 </div>
+                                <div class="card-title card-title2">Información tecnica</div>
+                                <table class="table select-table table2">
+
+                                    <tbody>
+                                    <tr class="">
+                                        <td> Equipo </td>
+                                        <td> <?php echo $tag;?></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td> Tipo </td>
+                                        <td> <?php echo $tag;?></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td> Descripcion </td>
+                                        <td> <?php echo $tag;?></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td> Largo </td>
+                                        <td> <?php echo $tag;?></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td> Proxima Mantencion </td>
+                                        <td> <?php echo $tag;?></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 grid-margin stretch-card">
-                        <div class="card ">
-                            <div class="card-title card-title2 row" style="--bs-gutter-x: 0px;">
-                                <div class="col-sm-7">Alarma</div>
-                                <div class="col-sm-2">Fecha</div>
-                                <div class="col-sm-3">Presc</div>
-                            </div>
-                            <div class="card-body2">
-                                <div class="row" style="--bs-gutter-x: 0px; font-size: 0.7em;">
-                                    <div class="col-sm-7">
-                                        <div style="background-color: red; width: 30px; height: 30px"></div>
-                                        <?php echo $alarma;?>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <?php echo $fecha;?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                            <p class="text-success"><?php echo $p;?>%</p>
-                                            <p><?php echo $vi."/".$vf;?></p>
-                                        </div>
-                                        <div class="progress progress-md">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $p;?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-4 ">
+                        <div class="row">
+                            <div class="col-12 grid-margin stretch-card no-padding ">
+                                <div class="card ">
+                                    <div class="card-title card-title2">Alarma de Falla</div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputUsername1">Prescriptivo</label>
-                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputUsername2">Recomendacion</label>
-                                    <input type="text" class="form-control" id="exampleInputUsername2" placeholder="">
+                                    <div class="card-body2">
+                                        <table class="table select-table table3">
+                                            <thead>
+                                            <tr>
+
+                                                <th>S</th>
+                                                <th>Componente</th>
+                                                <th>Descripción</th>
+                                                <th>Fecha</th>
+                                                <th>Presicion</th>
+
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="">
+                                                <td>   <div style="background-color: red; width: 10px; height: 10px; border-radius: 5px;"></div> </td>
+                                                <td> <?php echo $comp;?></td>
+                                                <td> <?php echo $alarma;?></td>
+                                                <td>  <?php echo $fecha;?></td>
+                                                <td>  <?php echo $p;?>%</td>
+                                            </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+
+
+
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12 grid-margin stretch-card no-padding ">
+                                <div class="card ">
+                                    <div class="card-title card-title2">Variables monotoreadas</div>
+
+                                    <div class="card-body2" >
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Prescriptivo</label>
+                                            <textarea rows="2" style="height: unset;"  class="form-control" id="exampleInputUsername1" placeholder=""></textarea>
+                                            <button type="button" class="btn btn-xs btn-secondary" style="float: right;">Editar</button>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername2">Recomendacion</label>
+                                            <textarea rows="2" style="height: unset;"  class="form-control" id="exampleInputUsername2" placeholder=""></textarea>
+                                            <button type="button" class="btn btn-xs btn-secondary" style="float: right;">Editar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="col-4 grid-margin stretch-card">
                         <div class="card">
@@ -78,12 +133,12 @@ $this->title='Prescriptivo';
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 grid-margin stretch-card">
+                    <div class="col-4 grid-margin stretch-card no-padding">
                         <div class="card">
                             <div class="card-title card-title2">Maximos admisibles</div>
                             <div class="card-body2">
                                 <div class="table-responsive  mt-1">
-                                    <table class="table select-table">
+                                    <table class="table select-table table3">
                                         <thead>
                                         <tr>
 
@@ -129,14 +184,14 @@ $this->title='Prescriptivo';
                             <div class="card-body2">
 
                                 <div class="table-responsiv  mt-1">
-                                    <table class="table select-table">
+                                    <table class="table select-table table3">
 
                                         <tbody>
                                         <tr class="">
                                             <td> 02 Mar </td>
 
-                                            <td> Mantencion programada</td>
-                                            <td> <i class="mdi mdi-eye text-primary typcn-2x"></i></td>
+                                            <td> Duracion 10H <div class="badge badge-opacity-black">Desgaste</div></td>
+                                            <td> <i class="mdi mdi-eye text-white typcn-1-5x"></i></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-primary btn-xs2 dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -152,11 +207,12 @@ $this->title='Prescriptivo';
                                                     </div>
                                                 </div></td>
                                         </tr>
+
                                         <tr class="">
                                             <td> 02 Mar </td>
 
-                                            <td> Mantencion programada</td>
-                                            <td> <i class="mdi mdi-eye text-primary typcn-2x"></i></td>
+                                            <td> Duracion 10H <div class="badge badge-opacity-black">Desgaste</div></td>
+                                            <td> <i class="mdi mdi-eye text-white typcn-1-5x"></i></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-primary btn-xs2 dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -172,11 +228,12 @@ $this->title='Prescriptivo';
                                                     </div>
                                                 </div></td>
                                         </tr>
+
                                         <tr class="">
                                             <td> 02 Mar </td>
 
-                                            <td> Mantencion programada</td>
-                                            <td> <i class="mdi mdi-eye text-primary typcn-2x"></i></td>
+                                            <td> Duracion 10H <div class="badge badge-opacity-black">Desgaste</div></td>
+                                            <td> <i class="mdi mdi-eye text-white typcn-1-5x"></i></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-primary btn-xs2 dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

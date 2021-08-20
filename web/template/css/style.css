@@ -13369,6 +13369,14 @@ fieldset:disabled .wizard > .actions a,
   padding: 10px;
 }
 
+.card-body2 .form-group label {
+  color:white;
+}
+.card-body2 .form-group input, .card-body2 .form-group textarea {
+  background: #2D2E40;
+    color:white;
+}
+
 .card-title {
   margin-bottom: 0.5rem;
 }
@@ -21267,7 +21275,7 @@ code {
 }
 
 .btn-secondary, .wizard > .actions .disabled a {
-  background: #F9B200;
+  background: #FAA000;
   color: #ffffff;
 }
 
@@ -31995,6 +32003,9 @@ div.tagsinput span.tag a {
     border-style: dashed !important;
     text-transform: unset !important;
     color: white !important;
+}
+.table3 tbody td {
+    border-style: unset;
 }
 
 .typcn-1-5x {

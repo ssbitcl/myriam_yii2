@@ -200,9 +200,26 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionConveyor3()
+    public function actionConveyor3(
+
+        $tag='Sin tag',
+        $comp='Sin Comp',
+        $alarma='Sin Alarma',
+        $fecha='Sin fecha',
+        $vi='0',
+        $vf='0',
+        $p='0'
+    )
     {
-        return $this->render('conveyor3');
+        return $this->render('conveyor3',[
+            'tag'=>$tag,
+            'comp'=>$comp,
+            'alarma'=>$alarma,
+            'fecha'=>$fecha,
+            'vi'=>$vi,
+            'vf'=>$vf,
+            'p'=>$p,
+        ]);
     }
     /**
      * Displays actionConveyor4.
