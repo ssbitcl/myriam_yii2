@@ -150,6 +150,7 @@ class SiteController extends Controller
      */
     public function actionConveyor1(
         $tag='Sin tag',
+        $comp='Sin Comp',
         $alarma='Sin Alarma',
         $fecha='Sin fecha',
         $vi='0',
@@ -159,6 +160,7 @@ class SiteController extends Controller
     {
         return $this->render('conveyor1',[
             'tag'=>$tag,
+            'comp'=>$comp,
             'alarma'=>$alarma,
             'fecha'=>$fecha,
             'vi'=>$vi,
@@ -174,6 +176,7 @@ class SiteController extends Controller
      */
     public function actionConveyor2(
         $tag='Sin tag',
+        $comp='Sin Comp',
         $alarma='Sin Alarma',
         $fecha='Sin fecha',
         $vi='0',
@@ -183,6 +186,7 @@ class SiteController extends Controller
     {
         return $this->render('conveyor2',[
             'tag'=>$tag,
+            'comp'=>$comp,
             'alarma'=>$alarma,
             'fecha'=>$fecha,
             'vi'=>$vi,

@@ -34,6 +34,7 @@ $this->title='Principal';
                                 <tr>
                                     <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
                                             'tag'=>'CH001',
+                                            'comp'=>'Motor',
                                             'alarma'=>'Fisura Corona-piñon',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
@@ -48,6 +49,7 @@ $this->title='Principal';
                                     <td>
                                         <a class="nav-link" href="<?php echo Url::to(['/site/conveyor2',
                                             'tag'=>'CH001',
+                                            'comp'=>'Motor',
                                             'alarma'=>'Fisura Corona-piñon',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
@@ -78,6 +80,7 @@ $this->title='Principal';
                                 <tr>
                                     <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
                                             'tag'=>'CH001',
+                                            'comp'=>'Cinta',
                                             'alarma'=>'Desgaste',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
@@ -92,6 +95,7 @@ $this->title='Principal';
                                     <td>
                                         <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
                                             'tag'=>'CH001',
+                                            'comp'=>'Cinta',
                                             'alarma'=>'Desgaste',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
@@ -120,6 +124,7 @@ $this->title='Principal';
                                 <tr>
                                     <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
                                             'tag'=>'CH001',
+                                            'comp'=>'Motor',
                                             'alarma'=>'Fisura Corona-piñon',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
@@ -134,6 +139,7 @@ $this->title='Principal';
                                     <td>
                                         <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
                                             'tag'=>'CH001',
+                                            'comp'=>'Motor',
                                             'alarma'=>'Fisura Corona-piñon',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
@@ -163,6 +169,7 @@ $this->title='Principal';
                                 <tr>
                                     <td> <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
                                             'tag'=>'CH001',
+                                            'comp'=>'Motor',
                                             'alarma'=>'Fisura Corona-piñon',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
@@ -177,6 +184,7 @@ $this->title='Principal';
                                     <td>
                                         <a class="nav-link" href="<?php echo Url::to(['/site/conveyor1',
                                             'tag'=>'CH001',
+                                            'comp'=>'Motor',
                                             'alarma'=>'Fisura Corona-piñon',
                                             'fecha'=>'W32 (Sep 2021)',
                                             'vi'=>'85',
