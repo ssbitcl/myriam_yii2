@@ -29400,7 +29400,7 @@ div.tagsinput span.tag a {
   flex-direction: row;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 67px;
+  padding-top: 57px;
 }
 
 .page-body-wrapper.full-page-wrapper {
@@ -29879,7 +29879,7 @@ div.tagsinput span.tag a {
   -moz-transition: width 0.25s ease, background 0.25s ease;
   -ms-transition: width 0.25s ease, background 0.25s ease;
   width: 220px;
-  height: 67px;
+  height: 57px;
   padding: 20px 35px;
 }
 
@@ -29988,7 +29988,7 @@ div.tagsinput span.tag a {
   padding-top: 30px;
   padding-bottom: 25px;
   width: calc(100% - 220px);
-  height: 67px;
+  height: 57px;
 }
 
 @media (max-width: 991px) {
@@ -31997,8 +31997,47 @@ div.tagsinput span.tag a {
     color: white !important;
 }
 
-.table4 tr.table-danger2{
-    background-color: red;
+.typcn-1-5x {
+    font-size: 1.5em;
+}
+
+.badge-opacity-black {
+
+    background: #000;
+    color: #ffff;
+
+}
+.row-alta{
+    margin: 1px;
+    background-color: #f39292;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    color:white;
+}
+.row-media{
+    margin: 1px;
+    background-color: #eb805e;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    color:white;
+}
+.row-baja{
+    margin: 1px;
+    background-color: #f8cb61;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    color:white;
+}
+.row-buena{
+    margin: 1px;
+    background-color: #3d9a47;;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    color:white;
 }
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
 
