@@ -32008,6 +32008,22 @@ div.tagsinput span.tag a {
     border-style: unset;
 }
 
+.table4 thead th {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    border-color: #ffffff7d !important;
+    border-style: dashed !important;
+    text-transform: unset !important;
+    color: white !important;
+    text-align: center;
+}
+.table4 tbody td {
+    border-style: unset;
+    padding: 0px !important;
+    text-align: center;
+}
+
+
 .typcn-1-5x {
     font-size: 1.5em;
 }
